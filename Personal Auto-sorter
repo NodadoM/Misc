@@ -1,0 +1,39 @@
+import os
+import shutil
+
+folder_path = "C:/Users/PC/Downloads"
+files = os.listdir(folder_path)
+
+for file in files:
+    if file.endswith(".jpg"):
+        shutil.move(folder_path + "/" + file, folder_path + "/Images/" + file)
+    elif file.endswith(".png"):
+        shutil.move(folder_path + "/" + file, folder_path + "/Images/" + file)
+    elif file.endswith(".mp4"):
+        shutil.move(folder_path + "/" + file, folder_path + "/Video/" + file)
+    elif file.endswith(".webm"):
+        shutil.move(folder_path + "/" + file, folder_path + "/Images/" + file)
+    elif file.endswith(".mp3"):
+        shutil.move(folder_path + "/" + file, folder_path + "/Audio/" + file)
+    elif file.endswith(".pdf"):
+        shutil.move(folder_path + "/" + file, folder_path + "/Docs/" + file)
+    elif file.endswith(".docx"):
+        shutil.move(folder_path + "/" + file, folder_path + "/Docs/" + file)
+    elif file.endswith(".doc"):
+        shutil.move(folder_path + "/" + file, folder_path + "/Docs/" + file)
+    elif file.endswith(".zip"):
+        shutil.move(folder_path + "/" + file, folder_path + "/Rar/" + file)
+    elif file.endswith(".rar"):
+        shutil.move(folder_path + "/" + file, folder_path + "/Rar/" + file)
+    elif file.endswith(".xlsx"):
+        shutil.move(folder_path + "/" + file, folder_path + "/Docs/" + file)
+    elif file.endswith(".pptx"):
+        shutil.move(folder_path + "/" + file, folder_path + "/Docs/" + file)
+    elif file.endswith(".ppt"):
+        shutil.move(folder_path + "/" + file, folder_path + "/Docs/" + file)
+    elif file.endswith(".jpeg"):
+        shutil.move(folder_path + "/" + file, folder_path + "/Images/" + file)
+    elif file.endswith(".gif"):
+        shutil.move(folder_path + "/" + file, folder_path + "/Images/" + file)
+    elif file.endswith(".7z"):
+        shutil.move(folder_path + "/" + file, folder_path + "/Rar/" + file)
